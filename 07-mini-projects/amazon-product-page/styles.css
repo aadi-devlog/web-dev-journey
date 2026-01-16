@@ -1,0 +1,76 @@
+ .a1{
+    margin-top: 30px;
+ }
+ .h1{
+        color: black;
+        font-size: 50px;
+        font-weight: bold;
+ }
+ .f1{
+    color: rgb(6, 67, 248);
+    font-size: 30px;
+    display: block;
+    cursor:pointer;
+ }
+ .f1:hover{
+    color: brown ;
+    
+ }
+ .b1{
+    color: rgb(0,118,0);
+    font-size:40px;
+    font-weight: bold;
+
+ }
+ .d1{
+    display: inline-block;
+ }
+ .button-wrapper {
+  display: inline-block;
+  padding-top: 3px;
+  padding-left: 3px;
+  margin-right: 16px;
+}
+ .j1-button{
+    background-color:rgb(255,216,20);
+    border-style: none;
+    height: 40px;
+    width: 280px;
+    border-radius: 30px;
+    font-size: 19px;
+    font-weight:lighter;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+ 
+ .j1-button:hover{
+    background-color:rgb(246, 206, 4);
+ }
+ .j1-button:active{
+    opacity:0.7;
+    box-shadow: none;
+ }
+ .m2{
+    font-size: 30px;
+    font-weight: 50px,
+ }
+ .k1{
+    background-color: rgb(255,164,28);
+    border: none;
+    height: 40px;
+    width: 180px;
+    font-size: 19px;
+    font-weight: lighter;
+    border-radius:30px;
+    margin-left: 15px;
+    cursor:pointer;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+
+ }
+ .k1:hover{
+     background-color: rgb(251, 151, 1);
+ }
+ .k1:active{
+    opacity: 0.7;
+    box-shadow: none;
+ }
