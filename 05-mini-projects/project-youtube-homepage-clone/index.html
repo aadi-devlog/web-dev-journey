@@ -2,44 +2,79 @@
 <html>
     <head>
         <title>Youtube.com Clone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
         <style>
+            body{
+                font-family: Roboto, Arial;
+            }
             .search-bar{
                 font-size: 20px;
             }
             .thumbnail{
-              width: 300px;  
+              width: 100%;  
             }
             .search-bar{
                 display: block;
             }
-            .p1{
-                width:300px;
-            }
             .preview{
-                width: 300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 6px;
-            } 
-            .l1{
-                width: 300px;
+              width: 100%;
             }
+          
             .c1{
-                width: 30px;
-                display: inline-block;
-                border-radius: 50px;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
             }
             .div1{
-                display: inline-block;
+                margin-bottom: 12px;
+            }
+            .video-info-grid{
+              display: grid;
+              grid-template-columns:40px 1fr;
+            }
+            .channel-picture{
+              width: 40px;
+            }
+            .channel-info{
+              width: auto;
+            }
+            .p1{
+                margin-top: 0px;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 20px;
+                width:auto;
+            }
+            .p2,
+            .p3{
+                font-size: 12px;
+                color: rgb(96, 96, 96)
+            }
+            .video-grid{
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              column-gap:15px;
+              row-gap: 35px;
             }
            
         </style>
     </head>
     <body>
         <input type="text" placeholder="Search" class="search-bar">
-        <div class="preview">
-        <img src="../../assets/thumbnails/thumbnail-1.webp" class="thumbnail">
-        <p class="p1">
+        <div class="video-grid">
+          <div class="preview">
+          <div class="div1">
+             <img src="../../assets/thumbnails/thumbnail-1.webp" class="thumbnail">
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img src="../../assets/images/channel-1.jpeg" class="c1">
+            </div>
+            <div class="channel-info">
+              <p class="p1">
            Talking Tech and AI with Google CEO Sundar Pichai! 
         </p>
         <p class="p2">
@@ -48,9 +83,18 @@
         <p class="p3">
         3.4M views &middot; 6 months ago
         </p>
+            </div>
+          </div>
         </div>
         <div class="preview">
+            <div class="div1">
         <img src="../../assets/thumbnails/thumbnail-2.webp" class="thumbnail">
+        </div>
+        <div class="video-info-grid">
+        <div class="channel-picture">
+            <img src="../../assets/images/channel-2.jpeg" class="c1">
+        </div>
+        <div class="channel-info">
         <p class="p1">
          Try Not To Laugh Challenge #9  
         </p>
@@ -61,9 +105,18 @@
         19M views &middot; 4 year ago
         </p>
         </div>
+        </div>
+        </div>
          <div class="preview">
+        <div class="div1">
         <img src="../../assets/thumbnails/thumbnail-3.webp" class="thumbnail">
-        <p class="p1">
+        </div>
+        <div class="video-info-grid">
+        <div class="channel-picture">
+            <img src="../../assets/images/channel-3.jpeg" class="c1">
+        </div>
+        <div class="channel-info">
+            <p class="p1">
          Crazy Tik Toks Taken Moments Before DISASTER  
         </p>
         <p class="p2">
@@ -73,9 +126,18 @@
         12M views &middot; 1 year ago
         </p>
         </div>
+        </div>
+        </div>
         <div class="preview">
-        <img src="../../assets/thumbnails/thumbnail-4.webp" class="thumbnail">
-        <p class="p1">
+          <div class="div1">
+            <img src="../../assets/thumbnails/thumbnail-4.webp" class="thumbnail">
+          </div>
+          <div class="video-info-grid">
+          <div class="channel-picture" >
+            <img src="../../assets/images/channel-4.jpeg" class="c1">
+          </div>
+          <div class="channel-info">
+            <p class="p1">
             The Simplest Math Problem No One Can Solve - Collatz        </p>
         <p class="p2">
           Veritasium 
@@ -84,9 +146,18 @@
         18M views &middot; 4 months ago
         </p>
         </div>
+         </div>
+        </div>
         <div class="preview">
-        <img src="../../assets/thumbnails/thumbnail-5.webp" class="thumbnail">
-        <p class="p1">
+          <div class="div1">
+            <img src="../../assets/thumbnails/thumbnail-5.webp" class="thumbnail">
+          </div>
+          <div class="video-info-grid">
+          <div class="channel-picture">
+            <img src="../../assets/images/channel-5.jpeg" class="c1">
+          </div>
+          <div class="channel-info">
+            <p class="p1">
         Kadane's Algorithm to Maximum Sum Subarray Problem  
         </p>
         <p class="p2">
@@ -96,9 +167,18 @@
         519k views &middot; 5 year ago
         </p>
         </div>
+        </div>
+        </div>
         <div class="preview">
-        <img src="../../assets/thumbnails/thumbnail-6.webp" class="thumbnail">
-        <p class="p1">
+          <div class="div1">
+            <img src="../../assets/thumbnails/thumbnail-6.webp" class="thumbnail">
+          </div>
+          <div class="video-info-grid">
+          <div class="channel-picture">
+            <img src="../../assets/images/channel-6.jpeg" class="c1">
+          </div>
+          <div class="channel-info">
+            <p class="p1">
         Anything You Can Fit In The Circle I’ll Pay For  
         </p>
         <p class="p2">
@@ -107,10 +187,19 @@
         <p class="p3">
         141m views &middot; 1 year ago
         </p>
+         </div>
+        </div>
         </div>
         <div class="preview">
-        <img src="../../assets/thumbnails/thumbnail-7.webp" class="thumbnail">
-        <p class="p1">
+          <div class="div1">
+            <img src="../../assets/thumbnails/thumbnail-7.webp" class="thumbnail">
+          </div>
+          <div class="video-info-grid">
+          <div class="channel-picture">
+            <img src="../../assets/images/channel-7.jpeg" class="c1">
+          </div>
+          <div class="channel-info">
+            <p class="p1">
         Why Planes Don't Fly Over Tibet  
         </p>
         <p class="p2">
@@ -119,10 +208,19 @@
         <p class="p3">
         6.6m views &middot; 1 year ago
         </p>
+       </div>
+          </div>
         </div>
         <div class="preview">
-        <img src="../../assets/thumbnails/thumbnail-8.webp" class="thumbnail">
-        <p class="p1">
+          <div class="div1">
+            <img src="../../assets/thumbnails/thumbnail-8.webp" class="thumbnail">
+          </div>
+          <div class="video-info-grid">
+          <div class="channel-picture">
+            <img src="../../assets/images/channel-8.jpeg" class="c1">
+          </div>
+          <div class="channel-info">
+            <p class="p1">
         Inside The World's Biggest Passenger Plane  
         </p>
         <p class="p2">
@@ -131,10 +229,19 @@
         <p class="p3">
         3.7m views &middot; 10 months ago
         </p>
+          </div>
+          </div>
        </div>
         <div class="preview">
-        <img src="../../assets/thumbnails/thumbnail-9.webp" class="thumbnail">
-        <p class="p1">
+          <div class="div1">
+             <img src="../../assets/thumbnails/thumbnail-9.webp" class="thumbnail">
+          </div>
+          <div class="video-info-grid">
+          <div class="channel-picture">
+            <img src="../../assets/images/channel-9.jpeg" class="c1">
+          </div>
+          <div class="channel-info">
+           <p class="p1">
         The SECRET to Super Human STRENGTH  
         </p>
         <p class="p2">
@@ -143,10 +250,19 @@
         <p class="p3">
         20m views &middot; 3 year ago
         </p>
+          </div>
+          </div>
        </div>
        <div class="preview">
-        <img src="../../assets/thumbnails/thumbnail-10.webp" class="thumbnail">
-        <p class="p1">
+        <div class="div1">
+          <img src="../../assets/thumbnails/thumbnail-10.webp" class="thumbnail">
+        </div>
+        <div  class="video-info-grid">
+        <div class="channel-picture">
+          <img src="../../assets/images/channel-10.jpeg" class="c1">
+        </div>
+        <div class="channel-info">
+          <p class="p1">
         How The World's Largest Cruise Ship Makes 30,000 Meals Every  
         </p>
         <p class="p2">
@@ -155,10 +271,19 @@
         <p class="p3">
         14m views &middot; 1 year ago
         </p>
+        </div>
+        </div>
        </div>
         <div class="preview">
-        <img src="../../assets/thumbnails/thumbnail-11.webp" class="thumbnail">
-        <p class="p1">
+          <div class="div1">
+            <img src="../../assets/thumbnails/thumbnail-11.webp" class="thumbnail">
+          </div>
+          <div class="video-info-grid">
+          <div class="channel-picture">
+            <img src="../../assets/images/channel-11.jpeg" class="c1">
+          </div>
+          <div class="channel-info">
+            <p class="p1">
         Dubai's Crazy Underwater Train and Other Things #Only in Dubai  
         </p>
         <p class="p2">
@@ -167,10 +292,19 @@
         <p class="p3">
         3m views &middot; 1 year ago
         </p>
+          </div>
+          </div>
        </div>
         <div class="preview">
-        <img src="../../assets/thumbnails/thumbnail-12.webp" class="thumbnail">
-        <p class="p1">
+          <div class="div1">
+             <img src="../../assets/thumbnails/thumbnail-12.webp" class="thumbnail">
+          </div>
+          <div class="video-info-grid">
+          <div class="channel-picture">
+            <img src="../../assets/images/channel-12.jpeg" class="c1">
+          </div>
+          <div class="channel-info">
+             <p class="p1">
        What would happen if you didn’t drink water? - Mia Nacamulli  
         </p>
         <p class="p2">
@@ -179,7 +313,8 @@
         <p class="p3">
         12m views &middot; 5 year ago
         </p>
-       </div>
-        
+          </div>
+          </div>
+       </div>   
     </body>
 </html>
