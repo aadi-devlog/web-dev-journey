@@ -1,0 +1,92 @@
+         .search-bar{
+                flex: 1;
+                height: 34px;
+                padding-left: 10px;
+                font-size: 16px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: lightgray;
+                border-radius: 2px;
+                box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+                width: 0;
+                
+            }
+            .search-bar::placeholder{
+                font-family: Roboto,Arial;
+                font-size: 16px;
+            }
+            .header{
+                background-color: white;
+                height: 55px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: fixed;
+                z-index: 1;
+                right: 0px;
+                left: 0px;
+                top: 0px;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: rgb(202, 196, 196);
+            }
+            .left-section{
+                display: flex;
+                align-items: center;
+            }
+            .middle-section{
+                display: flex;
+                align-items: center;
+                flex:1;
+                margin-left: 70px;
+                margin-right: 35px;
+                max-width: 500px;
+            }
+            .right-section{
+                width: 205px;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                flex-shrink: 0;
+            }
+            .hamburger-menu{
+                height: 24px;
+                margin-left: 20px; 
+                margin-right: 20px;
+            }
+            .youtube-logo{
+                height: 20px;
+            }
+            .search-icon{
+                height: 25px;
+                width: 40px;
+            }
+            .search-button{
+
+                height: 38px;
+                width: 54px;
+                background-color: white;
+                border-width: 1px;
+                border-style: solid;
+                border-color: lightgrey;
+            }
+            .voice-search-button{
+                height: 40px;
+                width: 40px;
+                border: none;
+                background-color: white;
+            }
+            
+            .upload{
+                height: 24px;
+            }
+            .apps{
+                height: 24px;
+            }
+            .notifications{
+                height: 24px;
+            }
+            .profile{
+                height: 38px;
+            }

@@ -1,0 +1,165 @@
+ body{
+    background-color: rgb(18, 20, 32);
+  }
+          .header{
+            width: 100%;
+            padding: 10px;
+            background: rgb(15, 17, 28);
+            border-bottom: 1px solid rgb(110, 32, 48);
+            backdrop-filter: blur(15px);
+            display: flex;
+            height: 45px;
+            align-items: center;
+            justify-content: space-between;
+
+          } 
+          .logo{
+            color: white;
+            font-size: 45px;
+            font-weight: bold;
+          } 
+          .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            padding-right: 25px;
+          }
+          .nav-links li a{
+             position: relative;
+            font-size: 1.05rem;
+            font-weight: 500;
+            text-decoration: none;
+             color: rgb(200, 202, 215);
+            transition: 0.3s;
+          }
+          .nav-links li a:hover{
+            color:rgb(220, 45, 78);
+            text-shadow: 0 0 10px rgb(220, 45, 78);
+          }
+
+
+/* ===== Layout Containers ===== */
+.advantages1, .advantages2, .advantages3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 80px auto;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Base Styles for Advantage Sections */
+.left, .right, .left2, .right2, .left3, .right3 {
+    width: 100%;
+    text-align: left;
+}
+
+.image1-advantage {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ===== Rating Section Fix ===== */
+.rating-section {
+    display: flex; /* Changed to flex for easier mobile centering */
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: rgb(15, 17, 28);
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* ===== MOBILE RESPONSIVE===== */
+@media (max-width: 900px) {
+    /* Stack Advantages */
+    .advantages1, .advantages2, .advantages3 {
+        grid-template-columns: 1fr;
+        margin: 40px 20px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* Force Image to top or bottom consistently */
+    .advantages2 {
+        display: flex;
+        flex-direction: column-reverse; /* Put text above image for consistency */
+    }
+
+    .left, .right2, .left3 {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .left3 {
+        margin-left: 0; /* Reset desktop offset */
+    }
+
+    /* Adjust Ratings for small screens */
+    .rating-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .p1-advantage, .p1-advantage2, .p1-advantage3 {
+        font-size: 28px;
+    }
+}
+2. Changes for hero-section.css
+The Hero section in the reference site uses a specific stacking order on mobile where the text remains the priority.
+
+CSS
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .left-hero {
+        width: 100%;
+        padding: 60px 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .right-hero {
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .h1-hero {
+        font-size: 32px;
+    }
+
+    /* Button needs to be full width on mobile for better UX */
+    .btn {
+        margin-left: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        padding-right: 0;
+        gap: 1rem;
+        margin-top: 10px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+}

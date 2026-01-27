@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            landind page
+        </title>
+        <style>
+            body{
+                background: #0f172a;
+                color: white;
+                height: 3000px;
+            }
+           .nav{
+            width: 100%;
+            padding: 1rem 5%;
+            background: rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(15px);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           } 
+           .logo{
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: aqua;
+            letter-spacing: 1px;
+           }
+           .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+           }
+           .nav-links li a{
+            position: relative;
+            font-size: 1.05rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: rgba(90, 174, 216, 0.533);
+            transition: 0.3s;
+           }
+           .nav-links li a:hover{
+            color: blueviolet;
+            text-shadow: 0 0 10px blueviolet;
+         }
+         .btns{
+            display: flex;
+        }
+        .btn{
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1rem;
+            background: rgb(69, 230, 248);
+            color: #1582e1;
+            box-shadow: 0 0 15px rgb(39, 110, 210);
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            background: rgb(40, 191, 242);
+            box-shadow: 0 0 25px rgb(40, 191, 242);
+        }
+        </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">logo</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">How it works</a></li>
+        </ul>
+        <div class="btns">
+            <button class="btn">Book a call</button>
+        </div>
+    </nav>
+</body>
+</html>

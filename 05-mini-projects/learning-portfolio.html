@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title> 
+        <style>
+            body{
+                height: 3000px;
+            }
+            .hero-section{
+                height: 700px;
+                background: linear-gradient(to bottom right,blue,lightblue,teal);
+                text-align: center;
+                color: white;
+                border-radius: 30px;
+            }
+            .heading{
+                padding-top: 240px;
+                font-size: 50px;
+                margin-bottom: 0px;
+            }
+            .heading2{
+                font-size: 45px;
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+            .heading3{
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            .button{
+                color: white;
+                background-color: rgb(102, 209, 209);
+                border-color: white;
+                border-width: 1px;
+                border-style: solid;
+                padding-left: 70px;
+                padding-right: 70px;
+                padding-top:10px;
+                padding-bottom:10px;
+                border-radius: 20px;
+
+            }
+            .button:hover{
+               background-color: rgb(80, 190, 190);
+               cursor: pointer;
+            }
+            .middle-section{
+                background-color: rgb(226, 239, 243);
+                height: 1000px;
+                
+            }
+            .About,.skills{
+                text-align: center;
+                font-weight: bold;
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            .section-line {
+               width: 70%;
+              margin: 20px auto 40px;
+               border: none;
+               height: 1px;
+               background-color: rgba(0, 0, 0, 0.15);
+            }
+
+            .card1{
+                justify-self: center;
+                background-color: white;
+                border-width:1px;
+                border-style: none;
+                width: 800px;
+                height: 120px;
+                display: grid;
+                grid-template-columns: 150px  1fr;
+                margin: 0 auto;
+                 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                 margin-bottom: 70px;
+            }
+            .para{
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .image1{
+                height: 120px;
+                width: 120px;
+            }
+            .about-card{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                padding: 10px;
+            }
+             .skill-section{
+                display: flex;
+                justify-content: center;
+                justify-content: space-evenly;
+            }
+            .html,
+            .css,
+            .Flexbox-Grid{
+                display: grid;
+                grid-template-columns:40px 1fr;
+                background-color: white;
+                height: 60px;
+                width: 180px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                margin-bottom: 70px;
+            }
+            .image-box,
+            .image-box2{
+               height: 60px;
+               width: 40px; 
+            }
+            .html-logo,
+            .css-logo,
+            .Flexbox-Grid-logo{ 
+                 width: 100%;
+                height: 100%;
+                object-fit: contain;
+                padding: 1px;
+            }
+            .para2,
+            .para3,
+            .para4{
+                padding-top: 13px;
+                padding-left: 8px;
+                line-height: 10px;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div  class="hero-section"><!--hero section-->
+            <h1 class="heading">Learning Web Devlopment.</h1>
+            <h2 class="heading2">One Project at a Time</h2>
+            <h3 class="heading3">HTML&middot;CSS&middot;Responsive Layout</h3>
+            <button class="button">View My Work</button>
+        </div><!--hero section-->
+        <div class="middle-section"><!--middle section-->
+            <h3 class="About">About me</h3>
+            <hr class="section-line">
+            <div><!--about me-->
+                <div class="card1"><!--card1-->
+                    <div class="image1"><!--image-->
+                        <img src="../../assets/images/pngtree-laptop-coding.webp" class="about-card">
+                    </div><!--image-->
+                    <div class="para"><!--para-->
+                        I'm currently learning HTML and CSS.
+                        This page is built using only what I've learned so far.
+                    </div><!--para-->
+                </div><!--card1-->
+            </div><!--about me-->
+            <h3 class="skills">My skills</h3>
+            <hr class="section-line">
+            <div ><!--My Skills-->
+                <div class="skill-section"><!--card2-->
+                    <div class="html"><!--html card-->
+                        <div class="image-box">
+                            <img src="../../assets/images/html-logo.png" class="html-logo">
+                        </div>
+                        <div class="para2"><!--para-->
+                            HTML
+                            <p>Structuring the web.</p>
+                        </div><!--para-->
+                    </div><!--html card-->
+                <div class="css"><!--css card-->
+                        <div class="image-box2">
+                            <img src="../../assets/images/CSS-Logo.png" class="css-logo">
+                        </div>
+                        <div class="para3"><!--para-->
+                            HTML
+                            <p>Structuring the web.</p>
+                        </div><!--para-->
+                    </div><!--html card-->
+                 <div class="css"><!--Flexbox & Grid card-->
+                        <div class="image-box2">
+                            <img src="../../assets/images/Flexbox & Grid.jpg" class="Flexbox-Grid-logo">
+                        </div>
+                        <div class="para4"><!--para-->
+                            Flexbox & Grid
+                            <p>Layout Mastery</p>
+                        </div><!--para-->
+                    </div><!--Flexbox & Grid-->
+            </div><!--My Skills-->
+            <h3 class="About">My Projects</h3>
+            <hr class="section-line">
+            <div><!--My projects-->
+
+            </div>
+        </div><!--middle section-->
+    </body>
+</html>

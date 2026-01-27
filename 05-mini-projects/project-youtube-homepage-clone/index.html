@@ -5,69 +5,44 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-        <style>
-            body{
-                font-family: Roboto, Arial;
-            }
-            .search-bar{
-                font-size: 20px;
-            }
-            .thumbnail{
-              width: 100%;  
-            }
-            .search-bar{
-                display: block;
-            }
-            .preview{
-              width: 100%;
-            }
-          
-            .c1{
-                width: 36px;
-                height: 36px;
-                border-radius: 50%;
-            }
-            .div1{
-                margin-bottom: 12px;
-            }
-            .video-info-grid{
-              display: grid;
-              grid-template-columns:40px 1fr;
-            }
-            .channel-picture{
-              width: 40px;
-            }
-            .channel-info{
-              width: auto;
-            }
-            .p1{
-                margin-top: 0px;
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 20px;
-                width:auto;
-            }
-            .p2,
-            .p3{
-                font-size: 12px;
-                color: rgb(96, 96, 96)
-            }
-            .video-grid{
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr;
-              column-gap:15px;
-              row-gap: 35px;
-            }
-           
-        </style>
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
     </head>
     <body>
-        <input type="text" placeholder="Search" class="search-bar">
+         <div class="header"><!--header-->
+         <div class="left-section">
+          <img src="../../assets/images/icon/hamburger-menu.svg" class="hamburger-menu">
+          <img src="../../assets/images/icon/youtube-logo.svg" class="youtube-logo">
+         </div>
+        <div class="middle-section">
+         <input type="text" placeholder="Search" class="search-bar">
+         <button class="search-button"><img src="../../assets/images/icon/search.svg" class="search-icon"></button>
+         <button class="voice-search-button"><img src="../../assets/images/icon/voice-search-icon.svg"></button>
+         </div>
+         <div class="right-section"><!-- right section-->
+            <img src="../../assets/images/icon/upload.svg" class="upload">
+            <img src="../../assets/images/icon/youtube-apps.svg" class="apps">
+            <img src="../../assets/images/icon/notifications.svg" class="notifications">
+            <img src="../../assets/images/icon/aditya.png" class="profile">
+        </div><!--right section-->
+         </div><!--header-->
+         <div class="sidebar"><!--sidebar-->
+          <div class="absolute"><!--position absolute-->
+            <img src="../../assets/images/icon/home.svg" class="home">
+            <p class="home-para">Home</p>
+          </div><!--position absolute-->
+          <div class="explore"><!--explore icon-->
+            <img src="../../assets/images/icon/explore.svg" class="explore-icon">
+            <p class="explore-para">Explore</p>
+          </div>
+         </div><!--sidebar-->
         <div class="video-grid">
           <div class="preview">
           <div class="div1">
              <img src="../../assets/thumbnails/thumbnail-1.webp" class="thumbnail">
+             <div class="time">14:20</div>
           </div>
           <div class="video-info-grid">
             <div class="channel-picture">

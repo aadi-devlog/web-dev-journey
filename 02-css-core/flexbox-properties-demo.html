@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>flexbox exercise</title>
+     <style>
+        .flex-wrapper{
+            display: flex;
+            flex-direction: row;
+        }
+        .a1{
+            width: 200px;
+            background-color: lightblue;
+        }
+        .a2{
+            width: 75px;
+            background-color: lightpink;
+        }
+        .flex-wrapper2{
+            display: flex;
+            margin-top: 10px;
+            flex-direction: row;
+        }
+        .b1{
+            background-color: lightblue;
+            width: 50px;
+        }
+        .b2{
+            background-color: lightpink;
+            flex: 1;
+        }
+        .b3{
+            background-color: lightblue;
+            width: 75px;
+        }
+         .flex-wrapper3{
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            justify-content: space-between;
+        }
+        .c1{
+            background-color: lightblue;
+            width: 40px;
+        }
+        .c2{
+            background-color: lightpink;
+            width: 40px;
+        }
+        .c3{
+            background-color: lightblue;
+            width: 40px;
+        }
+        .c4{
+            background-color: lightpink;
+            width: 40px;
+        }
+        .flex-wrapper4{
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            border-width: 1px;
+            border-style: solid;
+            justify-content: space-between;
+            margin-top: 10px;
+            align-items: center;
+            border-color: grey;
+        }
+        .d1{
+            background-color: lightblue;
+            width: 40px;
+        }
+        .d2{
+           background-color: lightpink;
+            width: 40px;
+        }
+     </style>
+    </head>
+    <body class="body">
+        <div class="flex-wrapper"><!--wrapper-->
+            <div class="a1">200px</div>
+            <div class="a2">75px</div>
+        </div><!--wrapper-->
+        <div class="flex-wrapper2"><!--wrapper2-->
+            <div class="b1">item1</div>
+            <div class="b2">item2</div>
+            <div class="b3">item3</div>
+        </div><!--wrapper3-->
+        <div class="flex-wrapper3"><!--wrapper2-->
+            <div class="c1">item1</div>
+            <div class="c2">item2</div>
+            <div class="c3">item3</div>
+            <div class="c4">item4</div>
+        </div><!--wrapper4-->
+         <div class="flex-wrapper4"><!--wrapper2-->
+            <div class="d1">item1</div>
+            <div class="d2">item2</div>
+        </div><!--wrapper4-->
+    </body>
+</html>
