@@ -1,0 +1,135 @@
+.menu-vibe{
+    width: 100%;  
+    background-color: rgb(38, 28, 24);
+    min-height: 100vh;
+    margin-top: 0px;
+}
+
+.menu-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding-top:40px ;
+    
+}
+.coffee,
+.beverages,
+.snacks{
+    width: 300px;
+    height: 380px;
+    background-color:rgb(245, 237, 220) ;
+    border-radius: 30px;
+    
+}
+.c1,
+.b1,
+.s1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(38, 28, 24);
+}
+.coffee-menu,
+.beverage-menu,
+.snacks-menu{
+    line-height: 22px;
+}
+.def{
+    font-size: 15px;
+    
+}
+.vibe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+
+    max-width: 1000px;
+    width: 90%;
+    margin: 80px auto 0 auto;
+
+    background-color: rgb(250, 230, 205);
+    padding: 30px;
+    border-radius: 40px;
+}
+
+/* Updated card logic to stack content vertically */
+.vibe1,
+.vibe2,
+.vibe3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: aqua;  Remove this when ready */
+}
+
+/* Styling for the image cards */
+.img4 {
+    width: 100%;
+    max-width: 240px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 12px;    
+}
+
+/* Optional: Styling for the captions */
+.vibe-text {
+    font-size: 16px;
+    font-style: italic;
+    font-family: serif;
+    color: rgb(54, 38, 32);
+    margin: 0;
+}
+.Menu{
+    color: wheat;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 0px;
+    padding-top: 40px;
+}
+.vibe-title{
+    text-align: center;
+    color: wheat;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+  .menu-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .coffee,
+  .beverages,
+  .snacks {
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .Menu {
+    font-size: 36px;
+  }
+
+  .vibe {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .img4 {
+    max-width: 100%;
+    height: 200px;
+  }
+
+  .vibe-text {
+    font-size: 18px;
+  }
+}
